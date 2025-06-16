@@ -1,0 +1,28 @@
+{
+  "name": "@create-mcp-tool/core",
+  "version": "1.0.0",
+  "description": "Core AI generation engine for MCP tools",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test": "jest"
+  },
+  "dependencies": {
+    "openai": "^4.20.1",
+    "handlebars": "^4.7.8",
+    "zod": "^3.22.4",
+    "fs-extra": "^11.2.0",
+    "axios": "^1.6.2",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "templates/**/*"
+  ]
+}

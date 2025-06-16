@@ -1,0 +1,42 @@
+{
+  "name": "create-mcp-tool",
+  "version": "1.0.0",
+  "description": "CLI for generating MCP servers with AI",
+  "main": "dist/index.js",
+  "bin": {
+    "create-mcp-tool": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli.ts",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test": "jest"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12",
+    "chalk": "^5.3.0",
+    "ora": "^7.0.1",
+    "fs-extra": "^11.2.0",
+    "zod": "^3.22.4",
+    "@create-mcp-tool/core": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.0",
+    "@types/fs-extra": "^11.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "templates/**/*"
+  ],
+  "keywords": [
+    "mcp",
+    "cli",
+    "generator",
+    "ai"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
